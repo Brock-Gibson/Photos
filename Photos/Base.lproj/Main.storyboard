@@ -32,11 +32,22 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem systemItem="camera" id="CKw-QT-o8T"/>
-                        <barButtonItem systemItem="organize" id="GUm-CK-Kuc"/>
+                        <barButtonItem systemItem="camera" id="CKw-QT-o8T">
+                            <connections>
+                                <action selector="openCamera:" destination="BYZ-38-t0r" id="LFq-g3-Lwh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="organize" id="GUm-CK-Kuc">
+                            <connections>
+                                <action selector="openPhotos:" destination="BYZ-38-t0r" id="S2L-83-5OY"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="Oyl-vi-DH5"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="photoImageView" destination="zcM-BR-2hQ" id="BTW-qp-8r5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
